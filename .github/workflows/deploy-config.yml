@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'config/**'
+      - '.github/workflows/deploy-config.yml'
+      - 'deploy.py'
 
 jobs:
   deploy:
